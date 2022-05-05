@@ -1,0 +1,39 @@
+Instruction to run the code:
+
+
+Steps to run the code,
+
+1. Hardware Requirements
+
+a) GPU: Min 2GB
+b) Camera: CCTV/Webcam/Mobile Camera
+
+2. Install the required Libraries which are there in the requirement.txt file
+
+3. Download the dataset from the dataset_link folder or download it from below link
+https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
+
+4. Keep all the folders in a structural way so that you wont get any errors. Download the architecture from folder structure image
+
+5. Download the anaconda software 
+
+For Windows: https://docs.anaconda.com/anaconda/install/windows/
+For Linux: https://docs.anaconda.com/anaconda/install/linux/
+For Mac: https://docs.anaconda.com/anaconda/install/mac-os/
+
+6. During installation be sure to check to set Environmental variable path
+
+7. Create a new environment for the installation of libraries and then open command prompt and type conda create --name project, you can set any name in place of project and after then type y and enter.
+
+8. Install all the required libraries from requirement.txt by using the command pip install -r requirement.txt
+
+9. To Activate the environment Enter in the command prompt : conda activate project
+
+10. Run the main module : python main.py
+
+11. In order to train the model Enter this command: 
+python train_mask_detector.py --dataset "FOLDER LOCATION OF YOUR DATASET IN PC " 
+
+12. In order to save the train model and plot the graphs enter the below command
+
+python train_mask_detector.py --dataset "Dataset folder location" --plot "Enter the path location to save the path" --model "Enter the model location to save the model"
